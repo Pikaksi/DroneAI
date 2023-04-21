@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6498211223760565289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6498211223760565290}
+  - component: {fileID: 6498211223760565291}
+  - component: {fileID: 6498211223760565288}
+  - component: {fileID: 1573678843}
+  - component: {fileID: 1605257079}
+  m_Layer: 0
+  m_Name: NetworkGameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6498211223760565290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498211223760565289}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6498211223760565291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498211223760565289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 531cc755d2c3dcb44b6de233cf485c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugCounter: 0
+  readNetworksFromFile: 1
+  dividePosBy: 10
+  divideAngularMomentumBy: 100
+  populationSize: 500
+  eliteAmount: 10
+  tournamentSelectionAmount: 3
+  inputLayerSize: 7
+  secondLayerSize: 10
+  thirdLayerSize: 10
+  outputLayerSize: 4
+  randomNumberWeights: 4
+  randomNumberBiasses: 1
+  startingPosition: {x: 0, y: 10}
+  dronePrefab: {fileID: 2143973887475791398, guid: 0993d436a5c03be428b91e2e11a30c52, type: 3}
+  droneNetworkList: []
+  saveNetworkEveryXGenerations: 20
+  maxGenerationTime: 180
+  weightsMutationAmount: 0.01
+  biasesMutationAmount: 0.01
+  bigMutationChance: 0.05
+  bigMutationAmount: 1
+  parentFlipChanceAmountToPopulation: 0.3
+  timeHour: 0
+  timeMinute: 0
+  timeSecond: 0
+  neuralNetworkList: []
+  finalNetworkList: []
+  amountFinished: 0
+  generation: 0
+--- !u!114 &6498211223760565288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498211223760565289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e678c2a9354f24ba6ac556f46e0498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neuralNetworkList: []
+--- !u!114 &1573678843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498211223760565289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c360136db94d1c743b668dc49b1367f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tableLenght: 500
+--- !u!114 &1605257079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6498211223760565289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6960e4accad605641a363b231ade3cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeSpeed: 1
