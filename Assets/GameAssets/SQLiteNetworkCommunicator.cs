@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using Mono.Data.Sqlite;
 using System.Data;
+using Mono.Data.SQLite;
 
 public class SQLiteNetworkCommunicator : MonoBehaviour
 {
