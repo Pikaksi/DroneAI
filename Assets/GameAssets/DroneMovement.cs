@@ -26,6 +26,9 @@ public class DroneMovement : MonoBehaviour
     [SerializeField] Vector2 thrustDirectionVectorLeft;
     [SerializeField] Vector2 thrustDirectionVectorRight;
 
+    [SerializeField] GameObject particleSystemLeft;
+    [SerializeField] GameObject particleSystemRight;
+
     Vector3 gizmoPositionleft;
     Vector3 gizmoPositionright;
     Vector2 pos;
@@ -124,6 +127,12 @@ public class DroneMovement : MonoBehaviour
     {
         rightThrusterAngle = 0;
         leftThrusterAngle = 0;
+    }
+
+    public void Update()
+    {
+        particleSystemLeft.transform.localEulerAngles = new Vector3(leftThrusterAngle + 90.0f, -90.0f, 0.0f);
+        particleSystemRight.transform.localEulerAngles = new Vector3(rightThrusterAngle + 90.0f, -90.0f, 0.0f);
     }
 
     private void OnDrawGizmosSelected()

@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using System.Data;
-using Mono.Data.SQLite;
+using Mono.Data.Sqlite;
 
 public class SQLiteNetworkCommunicator : MonoBehaviour
 {

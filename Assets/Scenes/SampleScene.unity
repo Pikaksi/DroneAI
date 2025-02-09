@@ -677,6 +677,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6498211223760565291, guid: c15eeb5752a5f124480e70343cb06020, type: 3}
+      propertyPath: populationSize
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6498211223760565291, guid: c15eeb5752a5f124480e70343cb06020, type: 3}
       propertyPath: startingPoint.y
       value: 10
       objectReference: {fileID: 0}
